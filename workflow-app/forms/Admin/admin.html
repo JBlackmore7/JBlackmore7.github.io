@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <title>Admin Input Form</title>
+  </head>
+  <body>
+    <main>
+      <div class="adminContainer">
+        <div class="title">Work Orders That Need Action</div>
+        <table name="table" class="tableContent" id="adminTable">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+        <p id="log">Job Number Added Successfully!</p>
+      </div>
+      <script src="../data.js"></script>
+      <script src="loadAdminTable.js"></script>
+      <script>
+        function dropdown() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function (e) {
+          if (!e.target.matches(".dropbtn")) {
+            var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains("show")) {
+              myDropdown.classList.remove("show");
+            }
+          }
+        };
+      </script>
+    </main>
+  </body>
+</html>

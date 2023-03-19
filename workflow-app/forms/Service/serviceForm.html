@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <title>Service Work Form</title>
+  </head>
+  <body>
+    <main>
+      <div class="serviceContainer">
+        <div id="serviceTitle" class="title">Service Work</div>
+        <form action="" name="serviceWork" class="serviceWork" id="serviceWork">
+          <div class="serviceDetails">
+            <div class="textBox">
+              <label for="serviceDetails">Description of Work Performed</label>
+              <br />
+              <textarea
+                name="serviceDetails"
+                id="serviceDetails"
+                rows="5"
+                placeholder="Enter description of work performed..."
+                required
+              ></textarea>
+            </div>
+            <div class="truckStock">
+              <label for="truckStock">Truck Number/Stock</label>
+              <select name="truckStock" id="truckStock" required>
+                <option value="">Please choose an option</option>
+                <option value="Service Shop">Service Shop</option>
+                <option value="CVS977">CVS977 - Caravan</option>
+                <option value="CVS978">CVS978 - Caravan</option>
+                <option value="JJN018">JJN018 - Quad Cab</option>
+                <option value="JKA363">JKA363 - ProMaster</option>
+                <option value="CDA514">CDA514 - Mercedes</option>
+                <option value="JGB245">JGB245 - Colorado</option>
+              </select>
+            </div>
+            <div class="materialsTable">
+              <label for="materialsTable">Materials/Labor</label>
+              <br />
+              <table id="materials" class="materials" name="materials">
+                <thead>
+                  <tr>
+                    <th>Quantity</th>
+                    <th>Part Number</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="col0"><input type="number" min="0" name="quantity" /></td>
+                    <td id="col1"><input type="text" name="partNumber" /></td>
+                    <td id="col2"><input type="text" name="partDescription" /></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="addRow">
+                <tr>
+                  <td><input type="button" class="historyButton" value="Add Row" onclick="addRows()" /></td>
+                  <td><input type="button" class="historyButton" value="Delete Row" onclick="deleteRows()" /></td>
+                </tr>
+              </table>
+            </div>
+            <div class="textBox">
+              <label for="condemnationDetails">Condemnations/Deficiencies</label>
+              <br />
+              <textarea
+                name="condemnationDetails"
+                id="condemnationDetails"
+                rows="5"
+                placeholder="Enter description of condemnations and/or deficiencies..."
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="button">
+            <label for="btn2"></label>
+            <input type="submit" name="submit" id="btn2" value="Complete Work Order" />
+          </div>
+        </form>
+        <p id="log">Work Order Completed Successfully!</p>
+      </div>
+      <script src="../data.js"></script>
+      <script src="submitServiceForm.js"></script>
+      <script>
+        function dropdown() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function (e) {
+          if (!e.target.matches(".dropbtn")) {
+            var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains("show")) {
+              myDropdown.classList.remove("show");
+            }
+          }
+        };
+      </script>
+    </main>
+  </body>
+</html>

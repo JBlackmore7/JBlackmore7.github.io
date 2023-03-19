@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <title>Work Order Form</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="title">Create Work Order</div>
+        <form method="post" onsubmit="send(event, this)" id="createForm">
+          <div class="formDetails">
+            <div class="inputBox">
+              <label for="contactName">Contact Name</label>
+              <input type="text" name="contactName" id="contactName" placeholder="Enter full name" required />
+            </div>
+            <div class="inputBox">
+              <label for="companyName">Company Name</label>
+              <input type="text" name="companyName" id="companyName" placeholder="Enter company name" required />
+            </div>
+            <div class="inputBox">
+              <label for="contactNumber">Contact Number</label>
+              <input type="tel" name="contactNumber" id="contactNumber" placeholder="Enter phone number" required />
+            </div>
+            <div class="inputBox">
+              <label for="companyAddress">Company Address</label>
+              <input
+                type="text"
+                name="companyAddress"
+                id="companyAddress"
+                placeholder="Enter company address"
+                required
+              />
+            </div>
+            <div class="inputBox">
+              <label for="contactEmail">Contact Email</label>
+              <input type="email" name="contactEmail" id="contactEmail" placeholder="Enter email address" required />
+            </div>
+            <div class="inputBox">
+              <label for="workSite">Work Site/Vessel</label>
+              <input type="text" name="workSite" id="workSite" placeholder="Enter work site or vessel" required />
+            </div>
+            <div class="textBox">
+              <label for="details">Detailed Information/Equipment to be Serviced</label>
+              <br />
+              <textarea
+                name="details"
+                id="details"
+                rows="5"
+                placeholder="Enter detailed information here..."
+                required
+              ></textarea>
+            </div>
+            <div class="lowerBox">
+              <label for="workorderSelect">Type</label>
+              <select name="workorderType" id="workorderSelect" required>
+                <option value="">Select</option>
+                <option value="Service">Service</option>
+                <option value="Inspection">Inspection</option>
+                <option value="New Install">New Installation</option>
+                <option value="Warehouse Transfer">Warehouse Transfer</option>
+                <option value="Supply">Supply</option>
+                <option value="Warranty Repair">Warranty Repair</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="lowerBox">
+              <label for="date">Date</label>
+              <input type="date" name="date" id="date" required />
+            </div>
+            <div class="lowerBox">
+              <label for="employeeName">Employee Name</label>
+              <input type="text" name="employeeName" id="employeeName" placeholder="Enter employee name" required />
+            </div>
+          </div>
+          <div class="button">
+            <label for="btn"></label>
+            <input type="submit" name="submit" id="btn" value="Create" />
+          </div>
+        </form>
+        <p id="log">Work Order Created Successfully!</p>
+      </div>
+      <script src="submit.js"></script>
+      <script src="../data.js"></script>
+      <script>
+        function dropdown() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function (e) {
+          if (!e.target.matches(".dropbtn")) {
+            var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains("show")) {
+              myDropdown.classList.remove("show");
+            }
+          }
+        };
+      </script>
+    </main>
+  </body>
+</html>
