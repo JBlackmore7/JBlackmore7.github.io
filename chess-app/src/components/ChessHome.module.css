@@ -1,0 +1,120 @@
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+	.mainCenter {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+    justify-content: center;
+	align-items: center;
+	flex-basis: 100%;
+}
+
+.mainEnd {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.mainCenter {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		flex-basis: 100%;
+	}
+	
+	.mainEnd {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.mainCenter {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		flex-basis: 100%;
+	}
+	
+	.mainEnd {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.mainCenter {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-basis: 100%;
+	}
+	
+	.mainEnd {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		justify-content: center;
+	}
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.mainCenter {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		flex-basis: 100%;
+	}
+	
+	.mainEnd {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+	.mainCenter {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		flex-basis: 100%;
+	}
+	
+	.mainEnd {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+}

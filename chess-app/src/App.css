@@ -1,0 +1,197 @@
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+body {
+	margin: 0;
+}
+
+.board {
+    display: flex;
+    width: 100%;
+}
+
+.home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: rgb(2,0,36);
+	background-image: url("/src/images/6172384.jpg");
+	background-size: 100% 100%;
+}
+
+.myButton{
+	max-width: 50%;
+	width: 50%;
+	padding: 0.35em 1.2em;
+	border-radius:0.4em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Roboto',sans-serif;
+	font-weight: 700;
+	color:#0e121d;
+	background-color: #e2af43;
+	text-align:center;
+	transition: all 0.2s;
+}
+.myButton:hover{
+	color:#000000;
+	background-color:#FFFFFF;
+}
+
+.playAsWhite img, .playAsBlack img {
+	max-width: 100px;
+}
+
+.App {
+	text-align: center;
+	padding-top: 2rem;
+}
+
+.inCheck {
+	background: radial-gradient(ellipse at center, rgb(255, 0, 0) 0%, rgb(231, 0, 0) 25%, rgba(169, 0, 0, 0) 89%, rgba(158, 0, 0, 0) 100%);;
+}
+
+.playAsWhite {
+	margin-right: 13px;
+	border-radius: 5px;
+	background-color: lightgrey;
+}
+
+.playAsBlack {
+	margin-left: 13px;
+	border-radius: 5px;
+	background-color: lightgrey;
+}
+
+.buttonWrapper {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.undo, .newGame {
+	max-width: 50%;
+	width: 50%;
+	padding: 0.35em 1.2em;
+	border-radius:0.4em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Roboto',sans-serif;
+	font-weight: 700;
+	color:#0e121d;
+	background-color: #e2af43;
+	text-align:center;
+	transition: all 0.2s;
+}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	body {
+		margin: 0;
+	}
+	
+	.board {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+	
+	.home {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+		background: rgb(2,0,36);
+		background-image: url("/src/images/6172384.jpg");
+		background-size: 100% 100%;
+	}
+	
+	.myButton{
+		max-width: 280px;
+		width: 50%;
+		padding: 0.35em 1.2em;
+		border-radius:0.4em;
+		box-sizing: border-box;
+		text-decoration:none;
+		font-family:'Roboto',sans-serif;
+		font-weight: 700;
+		color:#0e121d;
+		background-color: #e2af43;
+		text-align:center;
+		transition: all 0.2s;
+	}
+	.myButton:hover{
+		color:#000000;
+		background-color:#FFFFFF;
+	}
+	
+	.playAsWhite img, .playAsBlack img {
+		max-width: 100px;
+	}
+	
+	.App {
+		text-align: center;
+		padding-top: 2rem;
+	}
+	
+	.inCheck {
+		background: radial-gradient(ellipse at center, rgb(255, 0, 0) 0%, rgb(231, 0, 0) 25%, rgba(169, 0, 0, 0) 89%, rgba(158, 0, 0, 0) 100%);;
+	}
+	
+	.playAsWhite {
+		margin-right: 13px;
+		border-radius: 5px;
+		background-color: lightgrey;
+	}
+	
+	.playAsBlack {
+		margin-left: 13px;
+		border-radius: 5px;
+		background-color: lightgrey;
+	}
+	
+	.buttonWrapper {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		max-width: 780px;
+	}
+	
+	.undo, .newGame {
+		max-width: 50%;
+		width: 50%;
+		padding: 0.35em 1.2em;
+		border-radius:0.4em;
+		box-sizing: border-box;
+		text-decoration:none;
+		font-family:'Roboto',sans-serif;
+		font-weight: 700;
+		color:#0e121d;
+		background-color: #e2af43;
+		text-align:center;
+		transition: all 0.2s;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}

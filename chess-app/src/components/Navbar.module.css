@@ -1,0 +1,106 @@
+/* X-Small devices (portrait phones, less than 576px) */
+.navBar {
+    display: flex;
+    background-color: #e2af43;
+    min-height: 2em;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeLink {
+    list-style-type: none;
+    font-family:'Roboto',sans-serif;
+	font-weight: 700;
+    padding-left: 5px;
+}
+
+.homeLink a {
+    color: rgb(2,0,36);
+}
+
+.homeLink:link, .homeLink:hover, .homeLink:focus, .homeLink:visited {
+    text-decoration: none;
+    color:#0e121d;
+}
+
+.contactLink {
+    list-style-type: none;
+    font-family:'Roboto',sans-serif;
+	font-weight: 700;
+    padding-right: 5px;
+}
+
+.contactLink a {
+    color: rgb(2,0,36);
+}
+
+.contactLink:link, .contactLink:hover, .contactLink:focus, .contactLink:visited {
+    text-decoration: none;
+	color:#0e121d;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .navBar {
+        display: flex;
+        background-color: #e2af43;
+        min-height: 2.2em;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .homeLink {
+        list-style-type: none;
+        font-family:'Roboto',sans-serif;
+        font-weight: 700;
+        font-size: large;
+        padding-left: 5px;
+    }
+    
+    .homeLink a {
+        color: rgb(2,0,36);
+    }
+    
+    .homeLink:link, .homeLink:hover, .homeLink:focus, .homeLink:visited {
+        text-decoration: none;
+        color:#0e121d;
+    }
+    
+    .contactLink {
+        list-style-type: none;
+        font-family:'Roboto',sans-serif;
+        font-weight: 700;
+        font-size: large;
+        padding-right: 5px;
+    }
+    
+    .contactLink a {
+        color: rgb(2,0,36);
+    }
+    
+    .contactLink:link, .contactLink:hover, .contactLink:focus, .contactLink:visited {
+        text-decoration: none;
+        color:#0e121d;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}

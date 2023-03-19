@@ -1,0 +1,138 @@
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+.modalOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1040;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+	opacity: .5;
+}
+  
+.modalWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1050;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	outline: 0;
+}
+  
+.modal {
+	z-index: 100;
+	background: #e2af43;
+	min-width: 8rem;
+	position: relative;
+	text-align: center;
+	border: 2px solid #000;
+	border-radius: 5px;
+	padding: 1.5rem 1.5rem;
+}
+  
+.modalHeader {
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+}
+  
+.modalCloseButton {
+	font-size: 1.3rem;
+	font-weight: 700;
+	line-height: 0;
+	color: black;
+	cursor: pointer;
+	border: none;
+	position: absolute;
+	top: -11px;
+	right: -20px;
+	padding: 0;
+	margin: 0;
+}
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.modalOverlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1040;
+		width: 100vw;
+		height: 100vh;
+		background-color: #000;
+		opacity: .5;
+	}
+	  
+	.modalWrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1050;
+		width: 100%;
+		height: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+		outline: 0;
+	}
+	  
+	.modal {
+		z-index: 100;
+		background: #e2af43;
+		min-width: 8rem;
+		position: relative;
+		text-align: center;
+		border: 2px solid #000;
+		border-radius: 5px;
+		padding: 1.5rem 1.5rem;
+	}
+	  
+	.modalHeader {
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+	}
+	  
+	.modalCloseButton {
+		font-size: 1.3rem;
+		font-weight: 700;
+		line-height: 0;
+		color: black;
+		cursor: pointer;
+		border: none;
+		position: absolute;
+		top: -11px;
+		right: -20px;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}
